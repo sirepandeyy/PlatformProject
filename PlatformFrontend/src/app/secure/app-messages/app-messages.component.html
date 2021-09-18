@@ -1,0 +1,41 @@
+<div class="pt-3 pb-2 mb-3 border-bottom">
+    <a routerLink="/appMessages/create" class="btn btn-sm btn-outline-secondary">Add</a>
+  </div>
+  
+  <div class="table-responsive">
+    <table class="table table-striped table-sm">
+      <thead>
+      <tr>                                                    
+        
+        <th>#</th>      
+        <th>User Id</th>
+        <th>Tenant Id</th>
+        
+        <th>Actions</th>
+      </tr>
+ 
+      </thead>
+      <tbody>
+      <tr *ngFor="let appMessage of appMessages">
+        <td>{{appMessage.Id}}</td>
+        <td>{{appMessage.user_id}}</td>
+        <td>{{appMessage.tenant_id}}</td>
+
+        
+        <td>
+           <div class="btn-group mr-2">
+            <a [routerLink]="['/appMessages', appMessage.Id, 'edit']" class="btn btn-sm btn-outline-secondary">Edit</a>
+            <a href="javascript:void(0)" class="btn btn-sm btn-outline-secondary"
+               (click)="delete(appMessage.Id)"
+            >Delete</a>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- <app-paginator
+    [lastPage]="lastPage"
+    (pageChanged)="load($event)"
+  ></app-paginator> -->

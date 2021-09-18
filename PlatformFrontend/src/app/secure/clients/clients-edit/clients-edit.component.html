@@ -1,0 +1,36 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>Address id</label>
+      <input class="form-control" name="address_id" formControlName="address_id">
+    </div>
+    <div class="mb-3">
+      <label>Start Date</label>
+      <input class="form-control" name="start_date" formControlName="start_date">
+    </div>
+
+
+    <div class="mb-3">
+      <label>Expiry Date</label>
+      <input class="form-control" name="expiry_date" formControlName="expiry_date">
+    </div>
+    <div class="mb-3">
+      <label>Client Key</label>
+      <input class="form-control" name="client_key" formControlName="client_key">
+    </div>
+    <div class="mb-3">
+      <label>Client Name</label>
+      <input class="form-control" name="client_name" formControlName="client_name">
+    </div>
+    <div class="mb-3">
+      <label>Description</label>
+      <input class="form-control" name="description" formControlName="description">
+    </div>
+
+    <div class="mb-3">
+      <label>Contact Id</label>
+      <input class="form-control" name="contact_id" formControlName="contact_id">
+    </div>
+
+
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>

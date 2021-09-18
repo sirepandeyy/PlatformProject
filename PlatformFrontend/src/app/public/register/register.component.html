@@ -1,0 +1,16 @@
+<form [formGroup]="form" (submit)="submit()">
+  <div class="mb-3">
+    <label>Username</label>
+    <input class="form-control" name="name" formControlName="name">
+  </div>
+  <div class="mb-3">
+    <label>Email</label>
+    <input class="form-control" name="email" formControlName="email">
+  </div>
+  <div class="mb-3">
+    <label>Password</label>
+    <input class="form-control" name="password" formControlName="password">
+  </div>
+
+  <button class="btn btn-outline-secondary">Save</button>
+</form>

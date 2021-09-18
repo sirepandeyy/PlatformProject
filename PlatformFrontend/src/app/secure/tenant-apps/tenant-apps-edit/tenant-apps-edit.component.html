@@ -1,0 +1,21 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>Tenant Id</label>
+      <input class="form-control" name="tenant_id" formControlName="tenant_id">
+    </div>
+    <div class="mb-3">
+      <label>App Id</label>
+      <input class="form-control" name="app_id" formControlName="app_id">
+    </div>
+    <div class="mb-3">
+      <label>Connection String</label>
+      <input class="form-control" name="connection_string" formControlName="connection_string">
+    </div>
+    <div class="mb-3">
+      <label>All Features</label>
+      <input class="form-control" name="all_features" formControlName="all_features">
+    </div>
+ 
+  
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>

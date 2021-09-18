@@ -1,0 +1,36 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>Feature Id</label>
+      <input class="form-control" name="feature_id" formControlName="feature_id">
+    </div>
+    <div class="mb-3">
+      <label>App Id</label>
+      <input class="form-control" name="app_id" formControlName="app_id">
+    </div>
+    <div class="mb-3">
+      <label>Base Feature Id</label>
+      <input class="form-control" name="base_feature_id" formControlName="base_feature_id">
+    </div>
+    <div class="mb-3">
+      <label>Feature Description</label>
+      <input class="form-control" name="feature_description" formControlName="feature_description">
+    </div>
+    <div class="mb-3">
+      <label>Feature Key</label>
+      <input class="form-control" name="feature_key" formControlName="feature_key">
+    </div>
+    <div class="mb-3">
+      <label>Operations</label>
+      <input class="form-control" name="operations" formControlName="operations">
+    </div>
+  
+    <div class="mb-3">
+      <label>Fetaure Type</label>
+      <input class="form-control" name="feature_type" formControlName="feature_type">
+    </div>
+  
+  
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>
+
+

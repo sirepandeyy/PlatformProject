@@ -1,0 +1,15 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>Tenant Id</label>
+      <input class="form-control" name="tenant_id" formControlName="tenant_id">
+    </div>
+    <div class="mb-3">
+      <label>User Id</label>
+      <input class="form-control" name="user_id" formControlName="user_id">
+    </div>
+    <div class="mb-3">
+      <label>Identity Provider Subscriber Id</label>
+      <input class="form-control" name="identity_provider_subscriber_id" formControlName="identity_provider_subscriber_id">
+    </div>
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>

@@ -1,0 +1,38 @@
+<form [formGroup]="form" (submit)="submit()">
+  <div class="mb-3">
+    <label>Login Name</label>
+    <input class="form-control" name="login_name" formControlName="login_name">
+  </div>
+  <div class="mb-3">
+    <label>Birth Date</label>
+    <input class="form-control" name="birth_date" formControlName="birth_date">
+  </div>
+  <div class="mb-3">
+    <label>Date of joining</label>
+    <input class="form-control" name="date_of_joining" formControlName="date_of_joining">
+  </div>
+  <div class="mb-3">
+    <label>First Name</label>
+    <input class="form-control" name="first_name" formControlName="first_name">
+  </div>
+  <div class="mb-3">
+    <label>Last Name</label>
+    <input class="form-control" name="last_name" formControlName="last_name">
+  </div>
+  <div class="mb-3">
+    <label>Email</label>
+    <input class="form-control" name="email" formControlName="email">
+  </div>
+
+  <div class="mb-3">
+    <label>Phone Number</label>
+    <input class="form-control" name="phone" formControlName="phone">
+  </div>
+
+  <div class="mb-3">
+    <label>Marital Status</label>
+    <input class="form-control" name="marital_status" formControlName="marital_status">
+  </div>
+
+  <button class="btn btn-outline-secondary">Save</button>
+</form>

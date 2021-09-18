@@ -1,0 +1,12 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>Tenant User App Id</label>
+      <input class="form-control" name="tenant_app_id" formControlName="tenant_app_id">
+    </div>
+    <div class="mb-3">
+      <label>Role Id</label>
+      <input class="form-control" name="role_id" formControlName="role_id">
+    </div>
+   
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>

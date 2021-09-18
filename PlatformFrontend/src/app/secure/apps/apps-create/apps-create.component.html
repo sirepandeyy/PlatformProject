@@ -1,0 +1,13 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>App Name</label>
+      <input class="form-control" name="app_name" formControlName="app_name">
+    </div>
+    <div class="mb-3">
+      <label>App Description</label>
+      <input class="form-control" name="app_description" formControlName="app_description">
+    </div>
+
+
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>

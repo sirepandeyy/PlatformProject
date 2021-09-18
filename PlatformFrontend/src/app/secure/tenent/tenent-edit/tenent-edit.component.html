@@ -1,0 +1,51 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>Tenant Name</label>
+      <input class="form-control" name="tenant_name" formControlName="tenant_name">
+    </div>
+    <div class="mb-3">
+      <label>Description</label>
+      <input class="form-control" name="description" formControlName="description">
+    </div>
+    <div class="mb-3">
+      <label>Alias</label>
+      <input class="form-control" name="alias" formControlName="alias">
+    </div>
+    <div class="mb-3">
+      <label>Published From</label>
+      <input class="form-control" name="published_from" formControlName="published_from">
+    </div>
+    <div class="mb-3">
+      <label>Published Till</label>
+      <input class="form-control" name="published_till" formControlName="published_till">
+    </div>
+    <div class="mb-3">
+      <label>Is Complete</label>
+      <input class="form-control" name="is_complete" formControlName="is_complete">
+    </div>
+  
+    <div class="mb-3">
+      <label>Site Image Url</label>
+      <input class="form-control" name="site_image_url_path" formControlName="site_image_url_path">
+    </div>
+  
+    <div class="mb-3">
+      <label>Status Id</label>
+      <input class="form-control" name="status_id" formControlName="status_id">
+    </div>
+  
+    <div class="mb-3">
+      <label>Client Id</label>
+      <input class="form-control" name="client_Id" formControlName="client_Id">
+    </div>
+  
+    <div class="mb-3">
+      <label>Identity Provider Details</label>
+      <input class="form-control" name="identity_providers_details" formControlName="identity_providers_details">
+    </div>
+    <div class="mb-3">
+      <label>Tenant Admin Email</label>
+      <input class="form-control" name="tenant_admin_email" formControlName="tenant_admin_email">
+    </div>
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>

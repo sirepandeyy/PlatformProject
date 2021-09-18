@@ -1,0 +1,48 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>Alert Type</label>
+      <input class="form-control" name="alert_type" formControlName="alert_type">
+    </div>
+    <div class="mb-3">
+      <label>Alert Name</label>
+      <input class="form-control" name="alert_name" formControlName="alert_name">
+    </div>
+    <div class="mb-3">
+      <label>Alert Description</label>
+      <input class="form-control" name="alert_desc" formControlName="alert_desc">
+    </div>
+    <div class="mb-3">
+      <label>From Date Time</label>
+      <input class="form-control" name="from_date_time" formControlName="from_date_time">
+    </div>
+    <div class="mb-3">
+      <label>Alert Duration Type</label>
+      <input class="form-control" name="alert_duration_type" formControlName="alert_duration_type">
+    </div>
+    <div class="mb-3">
+      <label>Subscription Date</label>
+      <input class="form-control" name="subscription_date" formControlName="subscription_date">
+    </div>
+  
+    <div class="mb-3">
+      <label>Has Unsubscribed</label>
+      <input class="form-control" name="has_unsubscribed" formControlName="has_unsubscribed">
+    </div>
+  
+    <div class="mb-3">
+      <label>Tenant User App Id</label>
+      <input class="form-control" name="tenant_user_app_id" formControlName="tenant_user_app_id">
+    </div>
+  
+    <div class="mb-3">
+      <label>Tenant User Id</label>
+      <input class="form-control" name="tenant_user_id" formControlName="tenant_user_id">
+    </div>
+  
+    <div class="mb-3">
+      <label>User Id</label>
+      <input class="form-control" name="user_id" formControlName="user_id">
+    </div>
+  
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>

@@ -1,0 +1,25 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3">
+      <label>Feature Id</label>
+      <input class="form-control" name="feature_id" formControlName="feature_id">
+    </div>
+    <div class="mb-3">
+      <label>Operation Permitted</label>
+      <input class="form-control" name="operation_permitted" formControlName="operation_permitted">
+    </div>
+    <div class="mb-3">
+      <label>Role Id</label>
+      <input class="form-control" name="role_id" formControlName="role_id">
+    </div>
+    <div class="mb-3">
+      <label>User Id</label>
+      <input class="form-control" name="user_id" formControlName="user_id">
+    </div>
+    <div class="mb-3">
+      <label>Role Feature Security</label>
+      <input class="form-control" name="role_feature_security" formControlName="role_feature_security">
+    </div>
+
+    <button class="btn btn-outline-secondary">Save</button>
+  </form>
+
